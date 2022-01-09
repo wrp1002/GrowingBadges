@@ -1,0 +1,12 @@
+{
+	"title": "GrowingBadges",
+	"description": "This tweak will scale your app notification badges based on how many notifications you have for that app.",
+	"compatibility": "Made for iOS 14",
+	"screenshots": ["screenshot1.png"],
+	"changelog": [
+		{
+			"version": "1.0.0",
+			"changes": ["Initial Release"]
+		}
+	]
+}

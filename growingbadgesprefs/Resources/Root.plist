@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>items</key>
+	<array>
+	<dict>
+		<key>cell</key>
+		<string>PSGroupCell</string>
+		<key>label</key>
+		<string>Options</string>
+		<key>footerText</key>
+		<string>If this is disabled, the badge will continue to grow after it reaches its max notifications.</string>
+	</dict>
+	<dict>
+		<key>cell</key>
+		<string>PSSwitchCell</string>
+		<key>label</key>
+		<string>Enabled</string>
+		<key>key</key>
+		<string>kEnabled</string>
+		<key>default</key>
+		<true/>
+		<key>defaults</key>
+		<string>com.wrp1002.growingbadges</string>
+		<key>PostNotification</key>
+		<string>com.wrp1002.growingbadges/ReloadPrefs</string>
+	</dict>
+	<dict>
+		<key>cell</key>
+		<string>PSSwitchCell</string>
+		<key>label</key>
+		<string>Limit Badge Size</string>
+		<key>key</key>
+		<string>kLimitSize</string>
+		<key>default</key>
+		<true/>
+		<key>defaults</key>
+		<string>com.wrp1002.growingbadges</string>
+		<key>PostNotification</key>
+		<string>com.wrp1002.growingbadges/ReloadPrefs</string>
+	</dict>
+
+	<dict>
+		<key>cell</key>
+		<string>PSGroupCell</string>
+		<key>label</key>
+		<string>Max Notifications</string>
+		<key>footerText</key>
+		<string>This is the max amount of notifications you expect to have on an app. For example, if you set this to 1,000 and an app has that many notifications, the badge will be centered and at its maximum size.</string>
+	</dict>
+	<dict>
+		<key>cell</key>
+		<string>PSEditTextCell</string>
+		<key>key</key>
+		<string>kMaxNotifs</string>
+		<key>keyboard</key>
+		<string>numbers</string>
+		<key>isNumeric</key>
+		<true/>
+		<key>default</key>
+		<integer>100</integer>
+		<key>defaults</key>
+		<string>com.wrp1002.growingbadges</string>
+		<key>PostNotification</key>
+		<string>com.wrp1002.growingbadges/ReloadPrefs</string>
+	</dict>
+
+	<dict>
+		<key>cell</key>
+		<string>PSGroupCell</string>
+		<key>footerText</key>
+		<string>Respringing is needed for changes to take effect!</string>
+	</dict>
+	<dict>
+		<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>label</key>
+			<string>Reset all settings</string>
+			<key>action</key>
+			<string>ResetSettings</string>
+			<key>isDestructive</key>
+			<true/>
+			<key>confirmation</key>
+			<dict>
+				<key>prompt</key>
+				<string>Are you sure? This will respring your device.</string>
+				<key>title</key>
+				<string>Reset!</string>
+				<key>cancelTitle</key>
+				<string>Cancel</string>
+			</dict>
+	</dict>
+	<dict>
+		<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>label</key>
+			<string>Respring</string>
+			<key>action</key>
+			<string>Respring</string>
+			<key>isDestructive</key>
+			<true/>
+			<key>confirmation</key>
+			<dict>
+				<key>prompt</key>
+				<string>Are you sure you want to respring your device?</string>
+				<key>title</key>
+				<string>Respring!</string>
+				<key>cancelTitle</key>
+				<string>Cancel</string>
+			</dict>
+	</dict>
+
+	<dict>
+		<key>cell</key>
+		<string>PSGroupCell</string>
+		<key>label</key>
+		<string>Developer</string>
+	</dict>
+	<dict>
+		<key>cell</key>
+		<string>PSButtonCell</string>
+		<key>label</key>
+		<string>Email Me</string>
+		<key>action</key>
+		<string>OpenEmail</string>
+		<key>icon</key>
+        <string>email.png</string>
+	</dict>
+	<dict>
+		<key>cell</key>
+		<string>PSButtonCell</string>
+		<key>label</key>
+		<string>Reddit</string>
+		<key>action</key>
+		<string>OpenReddit</string>
+		<key>icon</key>
+        <string>reddit.png</string>
+	</dict>
+	<dict>
+		<key>cell</key>
+		<string>PSButtonCell</string>
+		<key>label</key>
+		<string>Source Code</string>
+		<key>action</key>
+		<string>OpenGithub</string>
+		<key>icon</key>
+        <string>github.png</string>
+	</dict>
+	<dict>
+		<key>cell</key>
+		<string>PSButtonCell</string>
+		<key>label</key>
+		<string>Donate</string>
+		<key>action</key>
+		<string>OpenPaypal</string>
+		<key>icon</key>
+        <string>paypal.png</string>
+	</dict>
+
+	</array>
+
+	<key>title</key>
+	<string>GrowingBadges</string>
+</dict>
+</plist>

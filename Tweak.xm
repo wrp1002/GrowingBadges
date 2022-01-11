@@ -8,9 +8,9 @@
 
 //	=========================== Preference vars ===========================
 
-bool enabled;
+BOOL enabled;
+BOOL limitSize = true;
 NSInteger maxNotifs = 100;
-bool limitSize = true;
 
 //	=========================== Other vars ===========================
 

@@ -1,6 +1,6 @@
 Package: com.wrp1002.growingbadges
 Name: GrowingBadges
-Version: 1.0.0
+Version: 1.0.1
 Architecture: iphoneos-arm
 Description: App badges scale with how many notifications you have!
 Maintainer: Wes <wes.hamster@gmail.com>
